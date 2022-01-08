@@ -31,7 +31,7 @@ list_files = subprocess.run(["powershell", "-command", "cd", "./file_folder"])
 list_files = subprocess.run(["powershell", "-command", "ls"])
 
 # CHALLANGE try to make this range base on something else.
-for x in range(0, 3):
+for x in range(0, 13, 2):
     # CHALLANGE Try changing New-item to common typos to see what errors you
     # get (e.g try putting in new_item)
 
@@ -50,6 +50,8 @@ for x in range(0, 3):
     #conditional example
     if(x == 2):
         print("I only print the last time")
+        list_files = subprocess.run(
+                ["powershell", "-command", "mv", "./file_folder/file_" + str(x) + ".txt", "./"])
         x = 3
         print("for loop", x)
     print(x)
