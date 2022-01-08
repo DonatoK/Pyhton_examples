@@ -1,7 +1,9 @@
 # some examp;e python code linking what we learned in class to some new code
 # 0be used as a  learning example
 # By Donato Kava
-import subprocess.run
+import subprocess
+#import subprocess
+
 
 print("module is running")
 
@@ -38,14 +40,18 @@ for x in range(0, 3):
     #    The command is new-item ./file_folder/file#.txt **
     # *****************************************************
 
-    #conditional example
-    if(x := 3):
-        print("I only print the last time")
+    # place command here
     # this is a string contructor example below
     list_files = subprocess.run(
         ["powershell", "-command", "New-Item", "./file_folder/file_" + str(x) + ".txt"])
     # Display the directory to show the change
     list_files = subprocess.run(
         ["powershell", "-command", "ls", "./file_folder"])
+    #conditional example
+    if(x == 2):
+        print("I only print the last time")
+        x = 3
+        print("for loop", x)
+    print(x)
 
 print("Module Finished")
