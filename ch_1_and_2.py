@@ -25,7 +25,7 @@ print("hello World!")
 # A string value
 String = "why not"
 # integer values
-value = 5
+value = 5 # ingored
 another_value = 7
 two = 2
 # float  value
@@ -41,6 +41,10 @@ power_o_2 = two ** 2
 # update in a loop
 
 while value > 5 :
-#    print(value)
-    value = value -1
-#print("endloop")
+   print(value)
+   value = value -1
+   value = value * 2
+
+print("endloop")
+
+# hello
