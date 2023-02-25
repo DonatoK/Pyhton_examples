@@ -34,7 +34,7 @@ while value > 1 :
 # X <= Y
 # x == y
 
-# conditiional execution
+# conditional execution
 value =5
 while value > 1 :
     if value == 4:
@@ -49,7 +49,7 @@ def print_vals():
         print(value)
         value = value - 1
 
-# Using a function, notice you were using a function everytime you used print
+# Using a function, notice you were using a function every time you used print
 print_vals()
 
 def Better_print_vals(input_num):
@@ -138,4 +138,4 @@ print(my_string[t_index])
 
 # what if the letter is not there?
 
-# Next lessons starts to go over how to control flow in our functions and more data types besides strings (lists, truples, and dictonaries)
+# Next lessons starts to go over how to control flow in our functions and more data types besides strings (lists, truples, and dictionaries)
